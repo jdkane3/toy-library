@@ -46,7 +46,7 @@
                         <tr class="prop">
                             <td valign="top" class="name"><g:message code="toy.manufacturer.label" default="Manufacturer" /></td>
                             
-                            <td valign="top" class="value"><g:link controller="manufacturer" action="show" id="${toyInstance?.manufacturer?.id}">${toyInstance?.manufacturer?.encodeAsHTML()}</g:link></td>
+                            <td valign="top" class="value"><g:link controller="manufacturer" action="show" id="${toyInstance?.manufacturer?.id}">${toyInstance?.manufacturer?.name?.encodeAsHTML()}</g:link></td>
                             
                         </tr>
                     

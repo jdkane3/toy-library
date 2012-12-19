@@ -51,7 +51,7 @@
                                     <label for="manufacturer"><g:message code="toy.manufacturer.label" default="Manufacturer" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: toyInstance, field: 'manufacturer', 'errors')}">
-                                    <g:select name="manufacturer.id" from="${org.example.Manufacturer.list()}" optionKey="id" value="${toyInstance?.manufacturer?.id}"  />
+                                    <g:select name="manufacturer.id" from="${org.example.Manufacturer.list()}" optionKey="id" optionValue="name" value="${toyInstance?.manufacturer?.id}"  />
                                 </td>
                             </tr>
                         
