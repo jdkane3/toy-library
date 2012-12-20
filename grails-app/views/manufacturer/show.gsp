@@ -42,7 +42,7 @@
                             <td valign="top" style="text-align: left;" class="value">
                                 <ul>
                                 <g:each in="${manufacturerInstance.toys}" var="t">
-                                    <li><g:link controller="toy" action="show" id="${t.id}">${t?.encodeAsHTML()}</g:link></li>
+                                    <li><g:link controller="toy" action="show" id="${t.id}">${t?.name?.encodeAsHTML()}</g:link></li>
                                 </g:each>
                                 </ul>
                             </td>
