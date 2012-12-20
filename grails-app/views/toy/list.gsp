@@ -44,7 +44,7 @@
                         
                             <td>${fieldValue(bean: toyInstance, field: "price")}</td>
                         
-                            <td>${fieldValue(bean: toyInstance, field: "manufacturer")}</td>
+                            <td>${fieldValue(bean: toyInstance, field: "manufacturer.name")}</td>
                         
                             <td>${fieldValue(bean: toyInstance, field: "minAge")}</td>
                         
