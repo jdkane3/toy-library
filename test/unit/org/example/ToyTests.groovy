@@ -13,5 +13,12 @@ class ToyTests extends GrailsUnitTestCase {
 
     void testSomething() {
 
-    }
+		def toy = new Toy(name: 'TestToy', price: 10.00, minAge: '5')
+		
+		toy.manufacturer = new Manufacturer(name: 'TestMan', website: 'www.test.com')
+		
+		assertEquals('TestToy', toy.name)
+		assertEquals('TestMan', toy.manufacturer.name)
+
+	}
 }
