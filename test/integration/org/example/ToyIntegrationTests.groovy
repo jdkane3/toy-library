@@ -26,7 +26,7 @@ class ToyIntegrationTests extends GroovyTestCase {
 
 		def toyList = Toy.findAll()
 		
-		assertEquals( 2, toyList.size() )
+		assertEquals( 3, toyList.size() )
 		assertEquals( toyList[0].minAge, '5' )
 		assertEquals( toyList[1].manufacturer.name, 'Test Manufacturer1')
     }
